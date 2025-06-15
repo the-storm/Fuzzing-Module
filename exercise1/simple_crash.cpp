@@ -13,7 +13,7 @@ int main() {
    getline(cin, str);
    cout << str << endl << str [0] << endl;
 
-    if(str[0] == 0 || str[str.length() - 1] == 0) {
+    if(str[0] == 41 && str[str.length() - 1] == 41 && str[str.length()/2] == 41) {
         abort();
     }
     else {

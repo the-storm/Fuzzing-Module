@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  fuzzing_module:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./exercise1:/exercises/exercise1
+      - ./exercise2://exercises/exercise2
+      - ./exercise3://exercises/exercise3
