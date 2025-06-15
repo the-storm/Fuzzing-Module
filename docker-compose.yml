@@ -7,5 +7,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./exercise1:/exercises/exercise1
-      - ./exercise2://exercises/exercise2
-      - ./exercise3://exercises/exercise3
+      - ./exercise2:/exercises/exercise2
+      - ./exercise3:/exercises/exercise3
+      - ./build_exercises.sh:/build_exercises.sh
