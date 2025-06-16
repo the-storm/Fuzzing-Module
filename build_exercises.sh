@@ -40,7 +40,7 @@ cd /exercises/exercise4 && mkdir build && cd build && \
     AFL_LLVM_LAF_SPLIT_SWITCHES=1 AFL_LLVM_LAF_TRANSFORM_COMPARES=1 AFL_LLVM_LAF_SPLIT_COMPARES=1 AFL_USE_ASAN=1 make
 
 # the command below is to run the fuzzer :)
-# /AFLplusplus/afl-fuzz -i /seeds/ -o out -m none -d -- /exercises/exercise4/build/flac_parser @@
+# /AFLplusplus/afl-fuzz -i /seeds/ -o out -m none -d -- /exercises/exercise4/src/build/flac_parser @@
 
 
 echo "✅ All exercises built successfully."
