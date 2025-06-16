@@ -4,7 +4,7 @@ export CC=/AFLplusplus/afl-clang-fast
 export CXX=/AFLplusplus/afl-clang-fast++
 
 # building exercise 1
-cd /exercises/exercise1 && mkdir build && cd build && \
+cd /exercises/exercise1 && rm -rf build && mkdir build && cd build && \
     CC=/AFLplusplus/afl-clang-fast CXX=/AFLplusplus/afl-clang-fast++ cmake .. && \
     make
 
@@ -13,7 +13,7 @@ cd /exercises/exercise1 && mkdir build && cd build && \
 # /AFLplusplus/afl-fuzz -i /seeds -o out -m none -d -- /exercises/exercise1/build/simple_crash
 
 # building exercise 2
-cd /exercises/exercise2 && mkdir build && cd build && \
+cd /exercises/exercise2 && rm -rf build && mkdir build && cd build && \
     CC=/AFLplusplus/afl-clang-fast CXX=/AFLplusplus/afl-clang-fast++ cmake .. && \
     make
 
@@ -22,7 +22,7 @@ cd /exercises/exercise2 && mkdir build && cd build && \
 
 # building exercise 3
 
-cd /exercises/exercise3 && mkdir build && cd build && \
+cd /exercises/exercise3 && rm -rf build && mkdir build && cd build && \
     CC=/AFLplusplus/afl-clang-fast CXX=/AFLplusplus/afl-clang-fast++ cmake .. && \
     make
 
@@ -31,7 +31,7 @@ cd /exercises/exercise3 && mkdir build && cd build && \
 
 # building exercise 4
 
-cd /exercises/exercise4 && mkdir build && cd build && \
+cd /exercises/exercise4/src && rm -rf build && mkdir build && cd build && \
     AFL_LLVM_LAF_SPLIT_SWITCHES=1 \
     AFL_LLVM_LAF_TRANSFORM_COMPARES=1 \
     AFL_LLVM_LAF_SPLIT_COMPARES=1 \
